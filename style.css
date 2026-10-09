@@ -1,0 +1,15 @@
+/* Mi hoja de etilo */
+* {
+    margin: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,Helvetica, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

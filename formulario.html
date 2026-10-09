@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="style.css">    
+    </head>
+    <body>
+            <header>
+                <h1>Formulario de registro</h1>
+            </header>
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="Nombre">Nombre: </label>
+                <input type="text" name="nombre" id="Nombre" placeholder="Nombre" required minlength="2" maxlength="100"><br>
+                <label for="Apellido">Apellido: </label>
+                <input type="text" name="apellido" id="Apellido" placeholder="Apellido" required minlength="2" maxlength="100"><br>
+                <label for="Email">Email: </label>
+                <input type="email" name="email" id="Email" placeholder="Email" required><br>
+                <label for="Edad">Edad: </label>
+                <input type="number" name="edad" id="Edad" placeholder="Edad" required min="0"><br>
+                <label for="Telefono">Teléfono: </label>
+                <input type="tel" name="telefono" id="Telefono" placeholder="Teléfono" required pattern="[0-9]{9}"><br>
+                <label for="Password">Contraseña: </label>
+                <input type="password" name="password" id="Password" placeholder="Contraseña" required minlength="6" maxlength="100"><br>
+                <label for="ConfirmarPassword">Confirmar Contraseña: </label>
+                <input type="password" name="confirmarPassword" id="ConfirmarPassword"  placeholder="Confirmar Contraseña" required minlength="6" maxlength="100"><br>
+                <label for="URL">URL: </label>
+                <input type="url" name="url" id="URL" placeholder="URL" required><br>
+                <label for="Edad">Edad: </label>
+                <input type="number" name="edad" id="Edad" placeholder="Edad" required min="0" max="120"><br>
+                <label for="Fecha">Fecha: </label>
+                <input type="date" name="fecha" id="Fecha" required min="1900-01-01" max="2026-10-06"><br>
+                <label for="Hora">Hora: </label>
+                <input type="time" name="hora" id="Hora" required><br> 
+                <label for="Minute">Minuto: </label>
+                <input type="number" name="minute" id="Minute" placeholder="Minuto" required min="0" max="59"><br>
+
+                <label for="Color">Color: </label>
+                <input type="color" name="color" id="Color" required><br>
+                <label for="Rango">Rango: </label>
+                <input type="range" name="rango" id="Rango" required min="0" max="100"><br>
+                <label for="Archivo">Archivo: </label>
+                <input type="file" name="archivo" id="Archivo" required><br>
+                <label for="Lista">Lista: </label>
+                <select name="lista" id="Lista" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <input type="radio" name="contacto" id="contacto_email" value="email" required>
+                <label for="contacto_email">Email</label><br>
+                <input type="radio" name="contacto" id="contacto_telefono" value="telefono" required>
+                <label for="contacto_telefono">Teléfono</label>
+
+            </fieldset>
+
+
+    </body>
+</html>
