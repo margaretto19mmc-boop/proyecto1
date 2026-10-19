@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+<html>
+    <head>
+        <title>Mi página web</title>
+        <link rel="stylesheet" href="stile.css">
+
+    </head>
+    <body>
+        <header>
+            Titulo
+        </header>
+        <form action="Respuesta.html">
+            <fieldset>
+                <legend> Formulario de contacto</legend>
+
+                        <br><label for="Nombre"> Nombre </label >
+                        <br><input type="text" id="Nombre" placeholder="Tu Nombre" name="Nombre" required minlength="2" maxlength="50">
+                        <br><label for="Apellido"> Apellido </label ></br>
+                        <br><input type="text" id="Apellido" placeholder="tu Apellido" name="Apellido" minlength="2" maxlength="50">
+                        <br><label for="email"> Correo Electronico </label >
+                        <br><input type="email" id="email" placeholder="Mi.Correo@electronico.com" name="Correo" required minlength="2" maxlength="50">
+                        <br><label for="contraseña">Contraseña</label>
+                        <br><input type="password" id="contraseña" name="Contraseña" required minlength="2" maxlength="50">
+                        <br><label for="telefono">telefona</label>
+                        <br><input type="tel" id="telefono" name="telefono" pattern="[0-9+ ] {9,15}" >
+                        <br><label for="URL">url</label>
+                        <br><input type="url" id="url" name="url" placeholder="www.direcion.com" >
+                        <br><label for="edad">Tu edad</label>
+                        <br><input type="number" id="edad" name="edad" min="18" max="99" >
+                        <br><label for="fecha">fecha</label>
+                        <br><input type="date" id="fecha" name="fecha"  >
+                        <br><label for="hora">hora</label>
+                        <br><input type="time" id="hora" name="hora" min="0:01" max="23:59">
+
+            </fieloset>
+            <fieloset>
+
+                     <legend>--Elige el metodo de contacto--</legend>
+                     <input type="radio" id="contacto email" name="contacto" value="email">
+                     <label for="contacto_email">Telefono</label>
+                     <input type="radio" id="contacto telefono" name="contacto" value="telefono">
+                     <label for="telefono">Telefono</label>
+                     <input type="radio" id="contacto cartas" name="contacto" value="Cartas">
+                     <label for="cartas">Cartas</label>
+                     
+            </fieloset>
+            
+        </form>
+    </body>
+
+</html>
