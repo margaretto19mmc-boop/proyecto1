@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al curso</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <h1>Inscripción</h1>
+        <p class="descripcion">Formulario de inscripción al curso de informática</p>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Introduce tu nombre completo" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@gmail.com" required>
+
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label>Sexo</label>
+            <div class="opciones">
+                <div>
+                    <input type="radio" id="hombre" name="sexo" value="Hombre">
+                    <label for="hombre">Hombre</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="mujer" name="sexo" value="Mujer">
+                    <label for="mujer">Mujer</label>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Información del curso</legend>
+
+            <label for="curso">Curso al que se inscribe</label>
+            <select id="curso" name="curso">
+                <option value="Ofimatica">Ofimática</option>
+                <option value="Programacion">Programación básica</option>
+                <option value="Diseno">Diseño web</option>
+            </select>
+
+            <label>Aficiones o intereses</label>
+            <div class="opciones">
+                <div>
+                    <input type="checkbox" id="programacion" name="intereses" value="Programacion">
+                    <label for="programacion">Programación</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="videojuegos" name="intereses" value="Videojuegos">
+                    <label for="videojuegos">Videojuegos</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="diseno" name="intereses" value="Diseno">
+                    <label for="diseno">Diseño</label>
+                </div>
+            </div>
+
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios"
+                      rows="5" placeholder="Escribe tus observaciones..."></textarea>
+
+        </fieldset>
+
+        <div class="botones">
+            <input type="submit" value="Enviar inscripción">
+            <input type="reset" value="Borrar formulario">
+        </div>
+
+        <p class="pie">Curso de informática · Inscripciones abiertas</p>
+
+    </form>
+
+</body>
+</html>

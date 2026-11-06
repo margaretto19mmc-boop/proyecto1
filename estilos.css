@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9eef5;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #183153;
+    margin-bottom: 5px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 1px solid #d5deea;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #245b9e;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e0;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.opciones {
+    margin-top: 10px;
+}
+
+.opciones div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.opciones input {
+    margin-right: 10px;
+}
+
+.opciones label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+.botones {
+    margin-top: 25px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+input[type="submit"] {
+    background-color: #245b9e;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #183153;
+}
+
+input[type="reset"] {
+    background-color: #e3e8ef;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #cbd3df;
+}
+
+.pie {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 20px;
+}
